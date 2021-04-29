@@ -1,0 +1,122 @@
+{"inventory":[
+
+    {"product_name": "apple",
+     "price": 1.09,
+     "in_stock": 44,
+     "code": "ap"
+    },
+
+    {"product_name": "banana",
+     "price": 0.99,
+     "in_stock": 23,
+     "code": "ap"
+    },
+
+    {"product_name": "cheese",
+     "price": 1.45,
+     "in_stock": 28,
+     "code": "ce"
+    },
+    
+    {"product_name": "milk",
+     "price": 1.12,
+     "in_stock": 40,
+     "code": "mk"
+    },
+    
+    {"product_name": "prosecco",
+     "price": 3.45,
+     "in_stock": 14,
+     "code": "pr"
+    },
+    
+    {"product_name": "sausages",
+     "price": 1.15,
+     "in_stock": 22,
+     "code": "sg"
+    },
+    
+    {"product_name": "spaghetti",
+     "price": 1.05,
+     "in_stock": 40,
+     "code": "sp"
+    },
+    
+    {"product_name": "biscuit",
+     "price": 0.79,
+     "in_stock": 31,
+     "code": "bc"
+    },
+
+    {"product_name": "oranges",
+     "price": 1.15,
+     "in_stock": 16,
+     "code": "or"
+    },
+
+    {"product_name": "sardines",
+     "price": 0.99,
+     "in_stock": 43,
+     "code": "sd"
+    },
+    {"product_name": "vegetable oil",
+     "price": 2.10,
+     "in_stock": 9,
+     "code": "vo"
+    },
+    
+    {"product_name": "butter",
+     "price": 1.35,
+     "in_stock": 28,
+     "code": "bt"
+    },
+
+    {"product_name": "bread",
+     "price": 1.05,
+     "in_stock": 33,
+     "code": "bd"
+    },
+    
+    {"product_name": "yoghurt",
+     "price": 1.15,
+     "in_stock": 5,
+     "code": "yg"
+    },
+
+    {"product_name": "carrots",
+     "price": 0.45,
+     "in_stock": 9,
+     "code": "ct"
+    },
+    
+    {"product_name": "crisps",
+     "price": 0.75,
+     "in_stock": 15,
+     "code": "cp"
+    },
+    {"product_name": "cornflakes",
+     "price": 1.85,
+     "in_stock": 11,
+     "code": "ck"
+    },
+
+    {"product_name": "rolled oat",
+     "price": 12.45,
+     "in_stock": 16,
+     "code": "ro"
+    },
+
+    {"product_name": "corned beef",
+     "price": 1.20,
+     "in_stock": 31,
+     "code": "cb"
+    }
+    
+   
+    
+    
+
+]
+
+
+}
