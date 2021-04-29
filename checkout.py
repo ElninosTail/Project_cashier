@@ -19,16 +19,12 @@ def cashier():
 
         with open("stock.json") as st:
             inv_read = json.load(st)
-        store_room = inv_read["inventory"][
-            0:
-        ]  # break down inventory json to list elements
+        store_room = inv_read["inventory"][0:]  # break down inventory json to list elements
         try:
             for elements in store_room:
                 if elements["product_name"] == product:
                     print(elements["price"])
-                    price = elements[
-                        "price"
-                    ]  # isolate product price from product name and store for use later
+                    price = elements["price"]  # isolate product price from product name and store for use later
 
             basket.append(product)
             quantity = int(input("How many? "))
@@ -58,10 +54,7 @@ def cashier():
                 print(f"Your change is =====> £{change:.2f}")
                 print("Thanks for your custom. \nHave a great day!!!")
         except UnboundLocalError:
-            print(
-                f"The product {product} doesn't exist in database. \nPlease check again."
-            )
+            print(f"The product {product} doesn't exist in database. \nPlease check again.")
             return total
 
 
-cashier()
