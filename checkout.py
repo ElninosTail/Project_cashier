@@ -39,9 +39,7 @@ def cashier():
 
             for items in basket:
                 for val in price_basket:
-                    zipped = zip(
-                        basket, price_basket
-                    )  # useful for correlating products selected with cost of quantity
+                    zipped = zip(basket, price_basket)  # useful for correlating products selected with cost of quantity
             for (a, b) in zipped:
                 print(f"{a}  --->  {b:.2f}")
 
