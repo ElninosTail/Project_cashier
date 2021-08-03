@@ -1,10 +1,9 @@
+import json
+
 """ Script for cashier at till.
     Should record individual items, quantity and price.
     To account for money received whilst - determining
     how much change given."""
-
-
-import json
 
 
 def cashier():
@@ -19,12 +18,16 @@ def cashier():
 
         with open("stock.json") as st:
             inv_read = json.load(st)
-        store_room = inv_read["inventory"][0:]  # break down inventory json to list elements
+        store_room = inv_read["inventory"][
+            0:
+        ]  # break down inventory json to list elements
         try:
             for elements in store_room:
                 if elements["product_name"] == product:
                     print(elements["price"])
-                    price = elements["price"]  # isolate product price from product name and store for use later
+                    price = elements[
+                        "price"
+                    ]  # isolate product price from product name and store for use later
 
             basket.append(product)
             quantity = int(input("How many? "))
@@ -39,7 +42,9 @@ def cashier():
 
             for items in basket:
                 for val in price_basket:
-                    zipped = zip(basket, price_basket)  # useful for correlating products selected with cost of quantity
+                    zipped = zip(
+                        basket, price_basket
+                    )  # useful for correlating products selected with cost of quantity
             for (a, b) in zipped:
                 print(f"{a}  --->  {b:.2f}")
 
@@ -52,7 +57,7 @@ def cashier():
                 print(f"Your change is =====> £{change:.2f}")
                 print("Thanks for your custom. \nHave a great day!!!")
         except UnboundLocalError:
-            print(f"The product {product} doesn't exist in database. \nPlease check again.")
+            print(
+                f"The product {product} doesn't exist in database. \nPlease check again."
+            )
             return total
-
-
